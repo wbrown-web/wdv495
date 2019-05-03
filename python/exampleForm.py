@@ -1,21 +1,22 @@
-#!C:\Users\wbrow\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7
+#!/usr/local/python-3.5
 
-# Import modules for CGI handling 
-import cgi
-
-
-# Create instance of FieldStorage 
-form = cgi.FieldStorage() 
-
-# Get data from fields
-firstname = form.getvalue('firstname')
-lastname  = form.getvalue('lastname')
-school = form.getvalue('school')
+# # Import modules for CGI handling 
+# import cgi, cgitb
 
 
-("content-type: text/html\n\n" ) #enables the python to be output by the browser
+# # Create instance of FieldStorage 
+# form = cgi.FieldStorage() 
+
+# # Get data from fields
+# firstname = form.getvalue('firstname')
+# lastname  = form.getvalue('lastname')
+# school = form.getvalue('school')
+
+
+print("content-type: text/html\n\n" ) #enables the python to be output by the browser
+
 print("<html>")
-print("head")
+print("<head>")
 print('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />')
 print("<title>WDV341 Intro PHP - Form Example</title>")
 print("</head>")
@@ -36,4 +37,5 @@ print('<input type="reset" name="button2" id="button2" value="Reset" />')
 print('</p>')
 print('</form>')
 print('</p>&nbsp;</p>')
-print('</html>')
+print("</body>")
+print("</html>")
